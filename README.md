@@ -20,8 +20,20 @@ API άντλησης δεδομένων : https://rapidapi.com/omgvamp/api/heart
 Για να μπορέσει να τρέξει το Application θα πρέπει να είναι εγκατεστημένη μία Postgres βάση δεδομένων. Sql Dump και Αρχείο .csv με τα δεδομένα έχουν επισυνεφθεί.
 
 Για να μπορέσει να τρέξει το BackEnd / Middleware θα πρέπει να γίνει installation της Java στον υπολογιστή
+- επίσης πρέπει να γίνει το set up ώστε να "κοιτάει" την Database που έχετε δημιουργήσει locally ( Set up database, username, password in src/main/properties/application.properties )
+- cd into backend root directory ( the one with pom.xml )
+- Run backend with the following commands
+  - In linux /mvnw spring-boot:run
+  - In Windows mvnw.cmd spring-boot:run
 
 Για το FrontEnd υλοποιημένο σε ReactJs θα πρέπει να γίνει installation του node.js, και του npm.
+- cd to FrontEnd src/main/webapp/myhearthstoneapp
+- npm install 
+- npm start
+
+To FrontEnd του Application έχει ένα Welcome Component που εξηγεί συνοπτικά την λειτουργικότητα του Application
+Στην συνέχεια μπορεί να επιλεχθεί στο NavigationBar η αναζήτηση καρτών είτε ως κριτήριο την κλάση ( Search by Class ) είτε ως κριτήριο το κόστος ( Search by Cost ).
+Αποδεκτά input αναγράφονται πάνω ακριβώς από το SearchBox.
 
 
 
