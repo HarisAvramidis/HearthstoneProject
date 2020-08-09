@@ -17,7 +17,12 @@ API άντλησης δεδομένων : https://rapidapi.com/omgvamp/api/heart
 
 Ως IDEA χρησιμοποιήθηκε το Intellij ( Community Edition ).
 
-Για να μπορέσει να τρέξει το Application θα πρέπει να είναι εγκατεστημένη μία Postgres βάση δεδομένων. Sql Dump και Αρχείο .csv με τα δεδομένα έχουν επισυνεφθεί.
+Για να μπορέσει να τρέξει το Application θα πρέπει να είναι εγκατεστημένη μία Postgres βάση δεδομένων. Sql Dump και Αρχείο .csv με τα δεδομένα έχουν επισυναφθεί.
+- cd/
+- cd "Program Files\PostgreSQL\12\bin"
+- psql -U username
+- Enter the password
+- psql databasename < data_base_dump ( Για την είσοδο του dump )
 
 Για να μπορέσει να τρέξει το BackEnd / Middleware θα πρέπει να γίνει installation της Java στον υπολογιστή
 - επίσης πρέπει να γίνει το set up ώστε να "κοιτάει" την Database που έχετε δημιουργήσει locally ( Set up database, username, password in src/main/properties/application.properties )
